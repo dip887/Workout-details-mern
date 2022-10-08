@@ -23,7 +23,7 @@ app.use("/api/workouts", workoutRoutes);
 
 //connect to db
 mongoose
-  .connect((process.env.MONG_URI).toString())
+  .connect('mongodb://dipanshu:abcxyz@ac-uptyn9m-shard-00-00.vajmyjm.mongodb.net:27017,ac-uptyn9m-shard-00-01.vajmyjm.mongodb.net:27017,ac-uptyn9m-shard-00-02.vajmyjm.mongodb.net:27017/?ssl=true&replicaSet=atlas-dsqcln-shard-0&authSource=admin&retryWrites=true&w=majority')
   .then(() => {
     //listen for requests
     app.listen(process.env.PORT, () => {
