@@ -19,7 +19,10 @@ app.use((req, res, next) => {
 });
 
 //routes
-app.use("/api/workouts", workoutRoutes);
+app.get('/', (req, res) => {
+  res.send("Welcome to Workout Server");
+});
+app.use('/workouts', workoutRoutes);
 
 //connect to db
 mongoose
