@@ -29,7 +29,7 @@ const Home = () => {
             <div className="workouts">
                 {workouts ?
                     workouts.map(workout => <WorkoutDetails key={workout._id} workout={workout} />) :
-                    <div>No Workouts</div>}
+                    <div>Loading...</div>}
             </div>
             <WorkoutForm />
         </div>
