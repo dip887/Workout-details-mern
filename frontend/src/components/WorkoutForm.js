@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useWorkoutContext } from "../hooks/useWorkoutContext";
-
+import Server from '../path';
 const WorkoutForm = () => {
   const { dispatch } = useWorkoutContext();
 
@@ -15,14 +15,14 @@ const WorkoutForm = () => {
 
     const workout = { title, load, reps };
 
-    const response = await fetch("/api/workouts", {
+    const response = await fetch(`${Server}workouts`, {
       method: "POST",
       body: JSON.stringify(workout),
       headers: {
         "content-Type": "application/json",
       },
     });
-
+    console.log(response);
     const json = await response.json();
 
     if (!response.ok) {
