@@ -8,7 +8,7 @@ const WorkoutDetails = ({ workout }) => {
   const { dispatch } = useWorkoutContext()
 
   const handleClick = async () => {
-    const response = await fetch(`${Server}workouts` + workout._id, {
+    const response = await fetch(`${Server}workouts/` + workout._id, {
       method: 'DELETE'
     })
 

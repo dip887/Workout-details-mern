@@ -5,8 +5,9 @@ const Navbar = () => {
     <header>
       <div className="container">
         <Link to="/">
-          <h2>Lawde Gym Chala Ja ... Body Bna</h2>
+          <h2>Gym Workout Details</h2>
         </Link>
+        <p>Developed by Dipanshu Garg(FSWD:10322) using MERN</p>
       </div>
     </header>
   );
