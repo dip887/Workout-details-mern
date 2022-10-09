@@ -1,5 +1,7 @@
 #####Back-end####
 
+Backend deployment: https://workout-details.herokuapp.com/
+
 1. i, "npm init -y" for ans all the ques
 2. npm install express
 3. npm i -g nodemon //globally install nodemon
